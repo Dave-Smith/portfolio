@@ -34,14 +34,22 @@ h3 {
     margin: 0;
 }
 a {
-    color: var(--magenta);
+    color: var(--white);
 }
 a:hover {
     color: var(--hotmag);
     text-decoration: none;
 }
+
+.gradient-bar {
+    background: linear-gradient(90deg, rgba(255, 23, 288, 1) 0%, rgba(134, 251, 251, 1) 100%);
+    height: 2px;
+}
+
 #intro {
-    padding-bottom: 1rem;
+    padding: 4rem 1rem 10rem 1rem;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 #intro p {
     font-size: 1rem;
@@ -62,3 +70,99 @@ a:hover {
 #intro h2 {
     font-size: 4rem;
 }
+
+#contact {
+    background-color: var(--plum);
+    padding: 3rem 0;
+}
+
+#contact .center-content {
+    text-align: center;
+    width: 400px;
+    margin: 0 auto;
+}
+
+#contact p:last-child {
+    margin-top: 3rem;
+}
+
+nav {
+    font-family: var(--mono);
+    font-size: 80%;
+    padding: 1rem
+}
+
+nav h1 a {
+    font-family: var(--sans);
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+nav li:first-child {
+    flex-basis: 100%;
+    text-align: center;
+}
+nav [class*="fa-"]{
+    font-size: 150%;
+    color: var(--aqua);
+}
+nav h1 [class*="fa-"]{
+    font-size: 90%;
+    color: var(--aqua);
+}
+nav a {
+    color: var(--white);
+    text-decoration: none;
+    display: block;
+}
+ nav a:hover,
+ nav [class*="fa-"]:hover {
+    color: var(--magenta);
+ }
+
+.button {
+    background-color: var(--magenta);
+    padding: .5rem;
+    border-radius: 5px;
+    font-family: var(--mono);
+    text-decoration: none;
+ }
+ .button:hover {
+    color: var(--white);
+    background-color: var(--hotmag);
+ }
+
+ footer {
+    text-align: center;
+    margin: 4rem 0
+ }
+ footer ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 2rem 0;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    gap: 3rem;
+    font-size: 3rem;
+ }
+
+ @media (min-width: 850px) {
+    nav {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+    nav li:first-child {
+        flex-basis: auto;
+        text-align: left;
+        margin-right: auto;
+    }
+ }
